@@ -1,0 +1,77 @@
+{
+  "name": "cos-similarity",
+  "version": "0.1.0",
+  "description": "Computes the cosine similarity between two vectors",
+  "keywords": [
+    "array",
+    "compare",
+    "comparisson",
+    "cos",
+    "cosine",
+    "diff",
+    "difference",
+    "dist",
+    "distance",
+    "math",
+    "similarity",
+    "vector"
+  ],
+  "homepage": "https://github.com/rtomrud/cos-similarity#readme",
+  "bugs": {
+    "url": "https://github.com/rtomrud/cos-similarity/issues"
+  },
+  "license": "MIT",
+  "author": "Artem Rudenko <rtomrud@gmail.com>",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rtomrud/cos-similarity.git"
+  },
+  "scripts": {
+    "bench": "node -r esm bench.js",
+    "cov": "nyc --reporter html tape -r esm index.test.js",
+    "test": "nyc --silent tape -r esm index.test.js | faucet && nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "posttest": "eslint *.js"
+  },
+  "devDependencies": {
+    "benchmark": "^2.1.4",
+    "compute-cosine-similarity": "^1.0.0",
+    "cosine-similarity": "^1.0.1",
+    "doc-similarity": "0.0.1",
+    "eslint": "^4.19.1",
+    "eslint-config-pretty-strict": "^1.0.0-rc.7",
+    "eslint-plugin-prettier": "^2.6.0",
+    "esm": "^3.0.38",
+    "faucet": "0.0.1",
+    "husky": "^0.15.0-rc.8",
+    "nyc": "^11.8.0",
+    "prettier": "1.12.1",
+    "tape": "^4.9.0"
+  },
+  "private": true,
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "./node_modules/eslint-config-pretty-strict/index.js"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    },
+    "root": true
+  },
+  "esm": {
+    "cjs": true,
+    "mode": "auto"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
+  }
+}
