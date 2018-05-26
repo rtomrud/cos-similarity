@@ -1,5 +1,8 @@
 # cos-similarity
 
+[![npm version](https://img.shields.io/npm/v/cos-similarity.svg?style=flat-square)](https://www.npmjs.com/package/cos-similarity)
+[![Build Status](https://travis-ci.com/rtomrud/cos-similarity.svg?branch=master)](https://travis-ci.com/rtomrud/cos-similarity)
+
 Computes the cosine similarity between two vectors
 
 - Optimized for dense vectors, that is, arrays
