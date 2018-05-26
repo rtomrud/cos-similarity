@@ -1,6 +1,6 @@
 {
   "name": "cos-similarity",
-  "version": "0.1.0",
+  "version": "1.0.0-beta.0",
   "description": "Computes the cosine similarity between two vectors",
   "keywords": [
     "array",
