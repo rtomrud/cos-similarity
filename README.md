@@ -18,7 +18,7 @@ npm install cos-similarity
 ## Using
 
 ```js
-import cosSimilarity from "./node_modules/cos-similarity/index.js";
+import cosSimilarity from "cos-similarity";
 
 cosSimilarity([1, 2, 4], [1, 0, 2]); // -> 0.8783100656536799
 cosSimilarity([1, 2, 0], [1, 2, 0]); // -> 1
