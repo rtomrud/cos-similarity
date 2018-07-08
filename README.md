@@ -15,7 +15,11 @@ Computes the cosine similarity between two vectors
 npm install cos-similarity
 ```
 
-## Using
+## API
+
+### `cosSimilarity(vectorA, vectorB)`
+
+Returns the cosine similarity between the given `vectorA` and `vectorB`. Returns `0` when given a zero vector, `[]`, `undefined` or nothing.
 
 ```js
 import cosSimilarity from "cos-similarity";
