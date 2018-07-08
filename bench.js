@@ -1,8 +1,8 @@
 import Benchmark from "./node_modules/benchmark/benchmark.js";
-import cosSimilarity from "./index.js";
-import cosineSimilarity from "./node_modules/cosine-similarity/index.js";
 import computeCosineSimilarity from "./node_modules/compute-cosine-similarity/lib/index.js";
+import cosineSimilarity from "./node_modules/cosine-similarity/index.js";
 import { cosineSim } from "./node_modules/doc-similarity/src/index.js";
+import cosSimilarity from "./index.js";
 
 const suite = Benchmark.Suite();
 
