@@ -17,10 +17,10 @@ while (dimension < dimensions) {
 }
 
 suite
-  .add("cosine-similarity", () => cosineSimilarity(a, b))
-  .add("compute-cosine-similarity", () => computeCosineSimilarity(a, b))
-  .add("doc-similarity cosineSim", () => cosineSim(a, b))
   .add("cos-similarity", () => cosSimilarity(a, b))
+  .add("doc-similarity cosineSim", () => cosineSim(a, b))
+  .add("compute-cosine-similarity", () => computeCosineSimilarity(a, b))
+  .add("cosine-similarity", () => cosineSimilarity(a, b))
   .on("cycle", event => console.log(String(event.target)))
   .on("complete", () =>
     console.log(`\nFastest is ${suite.filter("fastest").map("name")}`)
