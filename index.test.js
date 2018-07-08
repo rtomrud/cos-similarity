@@ -1,6 +1,11 @@
 import test from "./node_modules/tape/index.js";
 import cosSimilarity from "./index.js";
 
+test("cos-similarity with wrong arguments", ({ throws, end }) => {
+  throws(() => cosSimilarity(null, null), TypeError);
+  end();
+});
+
 test("cos-similarity with zero vectors", ({ equal, end }) => {
   equal(cosSimilarity(), 0);
   equal(cosSimilarity([]), 0);
