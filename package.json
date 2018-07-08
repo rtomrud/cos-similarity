@@ -28,9 +28,9 @@
   },
   "scripts": {
     "bench": "node -r esm bench.js",
-    "cov": "nyc --reporter html tape -r esm index.test.js",
-    "test": "nyc --silent tape -r esm index.test.js | faucet && nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
-    "posttest": "eslint *.js"
+    "lint": "eslint *.js",
+    "test": "nyc --reporter html tape -r esm index.test.js | faucet && nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "posttest": "npm run lint"
   },
   "devDependencies": {
     "benchmark": "^2.1.4",
