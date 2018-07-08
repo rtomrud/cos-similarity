@@ -4,13 +4,9 @@
   "description": "Computes the cosine similarity between two vectors",
   "keywords": [
     "array",
-    "compare",
-    "comparisson",
     "cos",
     "cosine",
-    "diff",
     "difference",
-    "dist",
     "distance",
     "math",
     "similarity",
