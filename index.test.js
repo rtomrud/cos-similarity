@@ -3,7 +3,6 @@ import cosSimilarity from "./index.js";
 
 test("cos-similarity with zero vectors", ({ equal, end }) => {
   equal(cosSimilarity(), 0);
-  equal(cosSimilarity(undefined, undefined), 0);
   equal(cosSimilarity([]), 0);
   equal(cosSimilarity([], []), 0);
   equal(cosSimilarity([0], [0]), 0);
