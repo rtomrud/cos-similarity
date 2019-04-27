@@ -28,7 +28,7 @@
     "url": "https://github.com/rtomrud/cos-similarity.git"
   },
   "scripts": {
-    "bench": "node -r esm bench.js",
+    "bench": "node bench.js",
     "build": "rollup -i index.js -o dist/index.js -f cjs",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint .",
