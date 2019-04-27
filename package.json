@@ -64,6 +64,7 @@
     "root": true
   },
   "eslintIgnore": [
+    "coverage",
     "dist"
   ],
   "esm": {
