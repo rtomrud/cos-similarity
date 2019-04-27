@@ -7,9 +7,8 @@
 
 Computes the [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity) between two vectors
 
-- Optimized for dense vectors, that is, arrays
-- Works with different length vectors, ignoring the additional dimensions of the longest one
-- Works with zero vectors, returning `0` if any vector is `0`, `undefined` or `[]`
+- Accepts vectors with different lengths, ignoring the additional dimensions of the longest one
+- Accepts zero vectors, returning `0` if any vector is `0`, `undefined` or `[]`
 
 ## Installing
 
