@@ -40,18 +40,18 @@
     "benchmark": "2.1.4",
     "compute-cosine-similarity": "1.0.0",
     "cosine-similarity": "1.0.1",
-    "coveralls": "3.0.3",
+    "coveralls": "3.0.6",
     "doc-similarity": "0.0.1",
-    "eslint": "5.16.0",
-    "eslint-config-pretty-strict": "2.0.0",
-    "eslint-plugin-prettier": "3.0.1",
-    "esm": "3.2.22",
+    "eslint": "6.3.0",
+    "eslint-config-pretty-strict": "4.0.0",
+    "eslint-plugin-prettier": "3.1.0",
+    "esm": "3.2.25",
     "faucet": "0.0.1",
-    "husky": "2.1.0",
-    "nyc": "14.0.0",
-    "prettier": "1.17.0",
-    "rollup": "1.10.1",
-    "tape": "4.10.1"
+    "husky": "3.0.5",
+    "nyc": "14.1.1",
+    "prettier": "1.18.2",
+    "rollup": "1.20.3",
+    "tape": "4.11.0"
   },
   "eslintConfig": {
     "env": {
