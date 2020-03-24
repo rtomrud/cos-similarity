@@ -7,9 +7,6 @@
 
 Computes the [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity) between two vectors
 
-- Accepts vectors with different lengths, ignoring the additional dimensions of the longest one
-- Accepts zero vectors, returning `0` if any vector is `0`, `undefined` or `[]`
-
 ## Installing
 
 ```bash
