@@ -21,7 +21,7 @@ suite
   .add("doc-similarity cosineSim", () => cosineSim(a, b))
   .add("compute-cosine-similarity", () => computeCosineSimilarity(a, b))
   .add("cosine-similarity", () => cosineSimilarity(a, b))
-  .on("cycle", event => console.log(String(event.target)))
+  .on("cycle", (event) => console.log(String(event.target)))
   .on("complete", () =>
     console.log(`\nFastest is ${suite.filter("fastest").map("name")}`)
   )

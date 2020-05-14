@@ -4,7 +4,7 @@
  *
  * https://en.wikipedia.org/wiki/Cosine_similarity
  */
-export default function(vectorA = [], vectorB = []) {
+export default function (vectorA = [], vectorB = []) {
   const dimensionality = Math.min(vectorA.length, vectorB.length);
   let dotAB = 0;
   let dotA = 0;
