@@ -30,7 +30,6 @@
   "scripts": {
     "bench": "node bench.js",
     "build": "rollup -i index.js -o dist/index.js -f cjs",
-    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint .",
     "prepare": "npm run build",
     "test": "nyc --reporter html tape -r esm index.test.js && nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
@@ -40,7 +39,6 @@
     "benchmark": "2.1.4",
     "compute-cosine-similarity": "1.0.0",
     "cosine-similarity": "1.0.1",
-    "coveralls": "3.0.11",
     "doc-similarity": "0.0.1",
     "eslint": "6.8.0",
     "eslint-config-pretty-strict": "4.0.0",
