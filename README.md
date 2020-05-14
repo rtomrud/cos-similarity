@@ -1,7 +1,7 @@
 # cos-similarity
 
 [![npm version](https://img.shields.io/npm/v/cos-similarity.svg?style=flat-square)](https://www.npmjs.com/package/cos-similarity)
-[![Build Status](https://travis-ci.com/rtomrud/cos-similarity.svg?branch=master)](https://travis-ci.com/rtomrud/cos-similarity)
+[![build status](https://github.com/rtomrud/cos-similarity/workflows/build/badge.svg)](https://github.com/rtomrud/cos-similarity/actions?query=branch%3Amaster+workflow%3Abuild)
 [![Coverage Status](https://coveralls.io/repos/github/rtomrud/cos-similarity/badge.svg?branch=master)](https://coveralls.io/github/rtomrud/cos-similarity?branch=master)
 [![Code size](https://badgen.net/bundlephobia/minzip/cos-similarity)](https://bundlephobia.com/result?p=cos-similarity)
 
