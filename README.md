@@ -2,7 +2,7 @@
 
 [![npm version](https://badgen.net/npm/v/cos-similarity)](https://www.npmjs.com/package/cos-similarity)
 [![build status](https://github.com/rtomrud/cos-similarity/workflows/build/badge.svg)](https://github.com/rtomrud/cos-similarity/actions?query=branch%3Amaster+workflow%3Abuild)
-[![Code size](https://badgen.net/bundlephobia/minzip/cos-similarity)](https://bundlephobia.com/result?p=cos-similarity)
+[![bundle size](https://badgen.net/bundlephobia/minzip/cos-similarity)](https://bundlephobia.com/result?p=cos-similarity)
 
 Computes the [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity) between two vectors
 
