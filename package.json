@@ -50,23 +50,6 @@
     "rollup": "2.10.0",
     "tape": "5.0.0"
   },
-  "eslintConfig": {
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "./node_modules/eslint-config-pretty-strict/index.js"
-    ],
-    "parserOptions": {
-      "ecmaVersion": 2018,
-      "sourceType": "module"
-    },
-    "root": true
-  },
-  "eslintIgnore": [
-    "coverage",
-    "dist"
-  ],
   "esm": {
     "sourceMap": true
   },
