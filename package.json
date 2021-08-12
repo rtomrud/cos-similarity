@@ -22,14 +22,14 @@
     "dist",
     "index.js"
   ],
-  "main": "dist/index.js",
+  "main": "dist/index.cjs",
   "repository": {
     "type": "git",
     "url": "https://github.com/rtomrud/cos-similarity.git"
   },
   "scripts": {
     "bench": "node bench.js",
-    "build": "rollup -i index.js -o dist/index.js -f cjs",
+    "build": "rollup -i index.js -o dist/index.cjs -f cjs --exports auto",
     "lint": "eslint .",
     "prepare": "husky install && npm run build",
     "test": "nyc --reporter html tape -r esm index.test.js && nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
@@ -52,5 +52,10 @@
   },
   "esm": {
     "sourceMap": true
+  },
+  "type": "module",
+  "exports": {
+    "import": "./index.js",
+    "default": "./dist/index.cjs"
   }
 }

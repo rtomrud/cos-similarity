@@ -1,10 +1,10 @@
-const Benchmark = require("./node_modules/benchmark/benchmark.js");
-const computeCosineSimilarity = require("./node_modules/compute-cosine-similarity/lib/index.js");
-const cosineSimilarity = require("./node_modules/cosine-similarity/index.js");
-const { cosineSim } = require("./node_modules/doc-similarity/src/index.js");
-const cosSimilarity = require("./dist/index.js");
+import benchmark from "benchmark";
+import computeCosineSimilarity from "compute-cosine-similarity";
+import cosineSimilarity from "cosine-similarity";
+import { cosineSim } from "doc-similarity";
+import cosSimilarity from "./index.js";
 
-const suite = Benchmark.Suite();
+const { Suite } = benchmark;
 
 const dimensions = 100;
 const a = [];
@@ -16,13 +16,13 @@ while (dimension < dimensions) {
   dimension += 1;
 }
 
-suite
+Suite()
   .add("cos-similarity", () => cosSimilarity(a, b))
   .add("doc-similarity cosineSim", () => cosineSim(a, b))
   .add("compute-cosine-similarity", () => computeCosineSimilarity(a, b))
   .add("cosine-similarity", () => cosineSimilarity(a, b))
   .on("cycle", (event) => console.log(String(event.target)))
-  .on("complete", () =>
-    console.log(`\nFastest is ${suite.filter("fastest").map("name")}`)
-  )
+  .on("complete", function () {
+    console.log(`\nFastest is ${this.filter("fastest").map("name")}`);
+  })
   .run();
