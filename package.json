@@ -32,7 +32,7 @@
     "build": "rollup -i index.js -o dist/index.cjs -f cjs --exports auto",
     "lint": "eslint .",
     "prepare": "husky install && npm run build",
-    "test": "nyc --reporter html tape -r esm index.test.js && nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",
     "posttest": "npm run lint"
   },
   "devDependencies": {
@@ -42,16 +42,12 @@
     "doc-similarity": "0.0.1",
     "eslint": "7.32.0",
     "eslint-config-pretty-strict": "8.0.2",
+    "eslint-plugin-jest": "24.4.0",
     "eslint-plugin-prettier": "3.4.0",
-    "esm": "3.2.25",
     "husky": "7.0.1",
-    "nyc": "15.1.0",
+    "jest": "27.0.6",
     "prettier": "2.3.2",
-    "rollup": "2.56.2",
-    "tape": "5.3.1"
-  },
-  "esm": {
-    "sourceMap": true
+    "rollup": "2.56.2"
   },
   "type": "module",
   "exports": {
