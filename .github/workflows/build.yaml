@@ -10,9 +10,9 @@ jobs:
         os:
           - "ubuntu-latest"
         node:
-          - "14"
           - "12"
-          - "10"
+          - "14"
+          - "16"
     name: Node.js ${{ matrix.node }} on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     steps:
