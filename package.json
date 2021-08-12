@@ -39,7 +39,6 @@
     "benchmark": "2.1.4",
     "compute-cosine-similarity": "1.0.0",
     "cosine-similarity": "1.0.1",
-    "doc-similarity": "0.0.1",
     "eslint": "7.32.0",
     "eslint-config-pretty-strict": "8.0.2",
     "eslint-plugin-jest": "24.4.0",
@@ -47,7 +46,8 @@
     "husky": "7.0.1",
     "jest": "27.0.6",
     "prettier": "2.3.2",
-    "rollup": "2.56.2"
+    "rollup": "2.56.2",
+    "tiny-tfidf": "0.9.1"
   },
   "type": "module",
   "exports": {
