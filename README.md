@@ -26,7 +26,3 @@ cosSimilarity([1, 2, 0], [1, 2, 0]); // -> 1
 cosSimilarity([2, 0, 0], [0, 2, 0]); // -> 0
 cosSimilarity([-1, -2, 0], [1, 2, 0]); // -> -1
 ```
-
-## License
-
-[MIT](./LICENSE)
