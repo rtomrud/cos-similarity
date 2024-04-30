@@ -19,7 +19,8 @@
   "license": "MIT",
   "author": "Artem Rudenko <rtomrud@gmail.com>",
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "repository": {
     "type": "git",
@@ -42,6 +43,7 @@
   },
   "type": "module",
   "exports": {
+    "types": "./index.d.ts",
     "default": "./index.js"
   }
 }

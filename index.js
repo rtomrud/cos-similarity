@@ -1,9 +1,3 @@
-/**
- * Returns the cosine similarity between the given `vectorA` and `vectorB`.
- * Returns `0` when given a zero vector, `[]`, `undefined` or nothing.
- *
- * https://en.wikipedia.org/wiki/Cosine_similarity
- */
 export default function (vectorA = [], vectorB = []) {
   const dimensionality = Math.min(vectorA.length, vectorB.length);
   let dotAB = 0;
