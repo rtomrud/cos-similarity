@@ -32,12 +32,11 @@
     "posttest": "npm run lint"
   },
   "devDependencies": {
+    "@eslint/js": "9.1.1",
     "benchmark": "2.1.4",
     "compute-cosine-similarity": "1.0.0",
     "cosine-similarity": "1.0.1",
-    "eslint": "8.20.0",
-    "eslint-config-pretty-strict": "8.1.1",
-    "eslint-plugin-prettier": "4.2.1",
+    "eslint": "8.57.0",
     "prettier": "2.7.1",
     "tiny-tfidf": "0.9.1"
   },

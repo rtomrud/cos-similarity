@@ -1,3 +1,4 @@
+import console from "node:console";
 import benchmark from "benchmark";
 import computeCosineSimilarity from "compute-cosine-similarity";
 import cosineSimilarity from "cosine-similarity";
