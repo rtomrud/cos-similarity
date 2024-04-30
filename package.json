@@ -35,12 +35,12 @@
   },
   "devDependencies": {
     "@eslint/js": "9.1.1",
-    "benchmark": "2.1.4",
-    "compute-cosine-similarity": "1.0.0",
+    "compute-cosine-similarity": "1.1.0",
     "cosine-similarity": "1.0.1",
+    "cosine-similarity-threshold": "1.0.1",
     "eslint": "8.57.0",
-    "prettier": "3.2.5",
-    "tiny-tfidf": "0.9.1"
+    "mitata": "0.1.11",
+    "prettier": "3.2.5"
   },
   "type": "module",
   "exports": {
