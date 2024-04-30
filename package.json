@@ -28,7 +28,7 @@
   "scripts": {
     "bench": "node bench.js",
     "lint": "eslint .",
-    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",
+    "test": "node --test --experimental-test-coverage",
     "posttest": "npm run lint"
   },
   "devDependencies": {
@@ -37,9 +37,7 @@
     "cosine-similarity": "1.0.1",
     "eslint": "8.20.0",
     "eslint-config-pretty-strict": "8.1.1",
-    "eslint-plugin-jest": "26.6.0",
     "eslint-plugin-prettier": "4.2.1",
-    "jest": "28.1.3",
     "prettier": "2.7.1",
     "tiny-tfidf": "0.9.1"
   },
