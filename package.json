@@ -34,13 +34,13 @@
     "posttest": "npm run lint && npm run format"
   },
   "devDependencies": {
-    "@eslint/js": "9.1.1",
+    "@eslint/js": "9.39.2",
     "compute-cosine-similarity": "1.1.0",
     "cosine-similarity": "1.0.1",
     "cosine-similarity-threshold": "1.0.1",
-    "eslint": "8.57.0",
-    "mitata": "0.1.11",
-    "prettier": "3.2.5"
+    "eslint": "9.39.2",
+    "mitata": "1.0.34",
+    "prettier": "3.7.4"
   },
   "type": "module",
   "exports": {
