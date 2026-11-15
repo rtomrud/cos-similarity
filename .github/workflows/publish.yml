@@ -1,0 +1,28 @@
+name: publish
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+permissions:
+  contents: read
+  # Lets npm authenticate the publish with an OIDC token (trusted publishing)
+  id-token: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      # No dependency cache, so a poisoned cache cannot reach a release
+      - uses: voidzero-dev/setup-vp@v1.22.0
+        with:
+          node-version: lts
+          run-install: |
+            - args: ['--frozen-lockfile']
+      - name: Check that the tag matches the package version
+        if: github.ref_type == 'tag'
+        run: test "$GITHUB_REF_NAME" = "v$(node -p 'require("./package.json").version')"
+      - run: vp check
+      - run: vp test
+      # Builds through prepublishOnly; trusted publishing adds provenance
+      - run: npm publish
