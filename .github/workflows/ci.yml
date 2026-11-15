@@ -12,16 +12,17 @@ jobs:
     strategy:
       matrix:
         node-version:
-          - lts/*
-          - current
+          - lts
+          - latest
     name: Node ${{ matrix.node-version }}
     steps:
       - uses: actions/checkout@v7
-      - uses: actions/setup-node@v7
+      - uses: voidzero-dev/setup-vp@v1.22.0
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "npm"
-      - run: npm ci
-      - run: npm run check
-      - run: npm test
-      - run: npm run build
+          cache: true
+          run-install: |
+            - args: ['--frozen-lockfile']
+      - run: vp check
+      - run: vp test
+      - run: vp pack
