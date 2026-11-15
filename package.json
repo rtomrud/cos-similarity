@@ -18,33 +18,46 @@
   },
   "license": "MIT",
   "author": "Artem Rudenko <rtomrud@gmail.com>",
-  "files": [
-    "index.js",
-    "index.d.ts"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rtomrud/cos-similarity.git"
   },
-  "scripts": {
-    "bench": "node bench.js",
-    "format": "prettier --check .",
-    "lint": "eslint .",
-    "test": "node --test --experimental-test-coverage",
-    "posttest": "npm run lint && npm run format"
-  },
-  "devDependencies": {
-    "@eslint/js": "9.39.2",
-    "compute-cosine-similarity": "1.1.0",
-    "cosine-similarity": "1.0.1",
-    "cosine-similarity-threshold": "1.0.1",
-    "eslint": "9.39.2",
-    "mitata": "1.0.34",
-    "prettier": "3.7.4"
-  },
+  "files": [
+    "dist"
+  ],
   "type": "module",
   "exports": {
-    "types": "./index.d.ts",
-    "default": "./index.js"
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "vp pack",
+    "dev": "vp pack --watch",
+    "test": "vp test",
+    "check": "vp check",
+    "prepublishOnly": "vp run build",
+    "prepare": "vp config",
+    "bench": "vp test bench --reporter=verbose"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "compute-cosine-similarity": "^1.1.0",
+    "cosine-similarity": "^1.0.1",
+    "cosine-similarity-threshold": "^1.0.1",
+    "typescript": "^7.0.2",
+    "vite-plus": "^1.6.0"
+  },
+  "overrides": {
+    "vite": "npm:@voidzero-dev/vite-plus-core@1.6.0"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "npm",
+      "version": "12.2.2",
+      "onFail": "download"
+    }
   }
 }

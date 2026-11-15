@@ -25,25 +25,16 @@ cosSimilarity([-1, -2, 0], [1, 2, 0]); // -> -1
 
 ## Benchmark
 
-To run the benchmark, clone the repositry and run the bench script:
+To run the benchmark, clone the repository and run the bench script:
 
 ```bash
 npm run bench
 ```
 
 ```
-benchmark                        time (avg)             (min … max)
--------------------------------------------------------------------
-• cosine similarity modules
--------------------------------------------------------------------
-cos-similarity                  249 ns/iter       (247 ns … 319 ns)
-compute-cosine-similarity       854 ns/iter       (829 ns … 428 µs)
-cosine-similarity            14'251 ns/iter    (13'680 ns … 229 µs)
-cosine-similarity-threshold     879 ns/iter       (802 ns … 310 µs)
-
-summary for cosine similarity modules
-  cos-similarity
-   3.43x faster than compute-cosine-similarity
-   3.53x faster than cosine-similarity-threshold
-   57.25x faster than cosine-similarity
+name                                    hz     min     max    mean     p75     p99    p995    p999     rme   samples
+cos-similarity               13,520,176.31  0.0001  0.0495  0.0001  0.0001  0.0001  0.0001  0.0001  ±0.03%  13393808   fastest
+cosine-similarity-threshold   4,276,436.48  0.0002  2.2570  0.0002  0.0002  0.0004  0.0004  0.0006  ±0.47%   4122061
+compute-cosine-similarity     3,836,308.75  0.0002  0.4432  0.0003  0.0003  0.0003  0.0003  0.0003  ±0.09%   3818427
+cosine-similarity               181,088.87  0.0054  0.1169  0.0055  0.0055  0.0064  0.0087  0.0108  ±0.07%    180407   slowest
 ```
